@@ -1,0 +1,145 @@
+@import 'open-props/style';
+
+@layer reset {
+  /*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  body {
+    line-height: calc(1em + 0.5rem);
+    -webkit-font-smoothing: antialiased;
+  }
+  img,
+  picture,
+  video,
+  canvas,
+  svg {
+    display: block;
+    max-width: 100%;
+  }
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    overflow-wrap: break-word;
+  }
+  #root {
+    isolation: isolate;
+  }
+}
+
+:root {
+  --surface-1: var(--gray-9);
+  --surface-2: var(--gray-8);
+  --surface-3: var(--gray-7);
+
+  --text-1: var(--gray-0);
+  --text-2: var(--gray-4);
+
+  --border: var(--gray-7);
+}
+
+body {
+  background-color: var(--surface-1);
+  color: var(--text-1);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-1);
+  min-height: 100vh;
+
+  max-width: var(--size-xs);
+  margin: 0 auto;
+  padding: 0 1rem;
+
+  @media (min-width: 480px) {
+    max-width: var(--size-sm);
+  }
+
+  @media (min-width: 768px) {
+    max-width: var(--size-md);
+  }
+}
+
+header {
+  padding-top: var(--size-3);
+}
+
+h1 {
+  font-size: var(--font-size-5);
+  font-weight: var(--font-weight-9);
+  line-height: var(--font-lineheight-0);
+}
+
+h2 {
+  color: var(--text-2);
+  font-size: var(--font-size-1);
+  margin-block-end: var(--size-1);
+}
+
+p {
+  font-size: var(--font-size-3);
+  max-inline-size: var(--size-content-2);
+}
+
+.gap {
+  & > * {
+    margin-block-start: var(--size-10);
+  }
+}
+
+form > div {
+  display: grid;
+  gap: var(--size-1);
+
+  &:not(:first-of-type) {
+    margin-block-start: var(--size-3);
+  }
+}
+
+label {
+  color: var(--text-2);
+  font-size: var(--font-size-0);
+  font-weight: var(--font-weight-6);
+}
+
+input,
+textarea {
+  background-color: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-1);
+  box-shadow: var(--shadow-1);
+  color: var(--text-1);
+  padding: var(--size-1);
+  width: 100%;
+}
+
+.projects {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: var(--size-2);
+
+  & > * {
+    background-color: var(--surface-2);
+    border: var(--border-size-1) solid var(--border);
+    border-radius: var(--radius-1);
+    box-shadow: var(--shadow-1);
+    padding: var(--size-1);
+  }
+}

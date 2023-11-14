@@ -1,4 +1,5 @@
 import type { MetaFunction } from '@remix-run/node'
+import Projects from '~/components/projects'
 import Skills from '~/components/skills'
 
 export const meta: MetaFunction = () => {
@@ -25,14 +26,7 @@ export default function Index() {
 
       <Skills />
 
-      <section className="projects">
-        <h2>Projects</h2>
-        <ul>
-          <li>Markdown Editor</li>
-          <li>Galleria Slideshow</li>
-          <li>Planets Fact Site</li>
-        </ul>
-      </section>
+      <Projects />
 
       <section className="contact">
         <h2>Contact</h2>

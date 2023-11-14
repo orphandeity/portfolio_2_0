@@ -86,29 +86,3 @@ header {
     margin-block-start: var(--size-10);
   }
 }
-
-form > div {
-  display: grid;
-  gap: var(--size-1);
-
-  &:not(:first-of-type) {
-    margin-block-start: var(--size-3);
-  }
-}
-
-label {
-  color: var(--text-2);
-  font-size: var(--font-size-0);
-  font-weight: var(--font-weight-6);
-}
-
-input,
-textarea {
-  background-color: var(--surface-2);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-1);
-  box-shadow: var(--shadow-1);
-  color: var(--text-1);
-  padding: var(--size-1);
-  width: 100%;
-}

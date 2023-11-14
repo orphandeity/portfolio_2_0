@@ -1,4 +1,5 @@
 import type { MetaFunction } from '@remix-run/node'
+import Contact from '~/components/contact'
 import Projects from '~/components/projects'
 import Skills from '~/components/skills'
 
@@ -28,24 +29,7 @@ export default function Index() {
 
       <Projects />
 
-      <section className="contact">
-        <h2>Contact</h2>
-        <form>
-          <div>
-            <label htmlFor="name">Name</label>
-            <input type="text" id="name" />
-          </div>
-          <div>
-            <label htmlFor="email">Email</label>
-            <input type="email" id="email" />
-          </div>
-          <div>
-            <label htmlFor="message">Message</label>
-            <textarea id="message" />
-          </div>
-          <button>Send message</button>
-        </form>
-      </section>
+      <Contact />
     </div>
   )
 }

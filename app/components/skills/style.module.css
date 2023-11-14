@@ -1,0 +1,12 @@
+.skills {
+  & > *:not(:first-child) {
+    margin-top: var(--size-3);
+  }
+
+  & ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: var(--size-3);
+  }
+}

@@ -1,4 +1,5 @@
 import type { MetaFunction } from '@remix-run/node'
+import Skills from '~/components/skills'
 
 export const meta: MetaFunction = () => {
   return [
@@ -22,36 +23,18 @@ export default function Index() {
         bit more about me or check out some things I have built.
       </p>
 
-      <section>
-        <h2>Skills</h2>
-        <details>
-          <summary>Modern Frontend Development</summary>
-          HTML, CSS, JavaScript, TypeScript, React
-        </details>
-        <details>
-          <summary>Server-Side Development</summary>
-          Node, Express, Next, Remix
-        </details>
-        <details>
-          <summary>Database Management</summary>
-          SQL, Postgres, SQLite3
-        </details>
-        <details>
-          <summary>Version Control and Collaboration</summary>
-          Git, GitHub, Figma, Sketch
-        </details>
-      </section>
+      <Skills />
 
-      <section>
+      <section className="projects">
         <h2>Projects</h2>
-        <ul className="projects">
+        <ul>
           <li>Markdown Editor</li>
           <li>Galleria Slideshow</li>
           <li>Planets Fact Site</li>
         </ul>
       </section>
 
-      <section>
+      <section className="contact">
         <h2>Contact</h2>
         <form>
           <div>

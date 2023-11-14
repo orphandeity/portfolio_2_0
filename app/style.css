@@ -50,8 +50,8 @@
   --surface-2: var(--gray-8);
   --surface-3: var(--gray-7);
 
-  --text-1: var(--gray-0);
-  --text-2: var(--gray-5);
+  --text-1: var(--gray-1);
+  --text-2: var(--gray-3);
 
   --border: var(--gray-7);
 }
@@ -85,4 +85,10 @@ header {
   & > * {
     margin-block-start: var(--size-10);
   }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: var(--size-3);
 }

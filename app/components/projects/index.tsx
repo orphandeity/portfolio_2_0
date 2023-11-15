@@ -45,7 +45,7 @@ export default function Projects({
                   href={project.demo}
                   target="_blank"
                   rel="noreferrer"
-                  className="button"
+                  className={styles.button}
                 >
                   <RocketIcon />
                   <span>View demo</span>
@@ -56,7 +56,7 @@ export default function Projects({
                   href={project.code}
                   target="_blank"
                   rel="noreferrer"
-                  className="button"
+                  className={styles.button}
                 >
                   <GitHubLogoIcon />
                   <span>View code</span>

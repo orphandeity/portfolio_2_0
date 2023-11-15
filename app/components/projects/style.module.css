@@ -32,3 +32,30 @@
 .links a {
   text-decoration: none;
 }
+
+.button {
+  --color: var(--violet-2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--size-1);
+  padding: var(--size-2) var(--size-3);
+  width: 100%;
+  border: var(--border-size-1) solid var(--color);
+  border-radius: var(--radius-2);
+
+  color: var(--color);
+  font-size: var(--font-size-0);
+  font-weight: var(--font-weight-6);
+  letter-spacing: var(--font-letterspacing-1);
+
+  transition: all 0.2s var(--ease-5);
+
+  &:hover {
+    --color: var(--violet-3);
+  }
+
+  &:active {
+    transform: translateY(2px);
+  }
+}

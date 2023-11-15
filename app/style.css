@@ -96,7 +96,7 @@ h2 {
   color: var(--text-2);
   font-weight: var(--font-weight-9);
   letter-spacing: var(--font-letterspacing-1);
-  margin-bottom: var(--size-4);
+  margin-bottom: var(--size-2);
 }
 
 .gap {

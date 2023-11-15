@@ -25,6 +25,10 @@ export default function Skills({
   return (
     <section {...props} className={styles.skills}>
       <h2>Skills</h2>
+      <p>
+        I use modern tools and frameworks, along with a strong adherance to web
+        standards to build fast, accessible, and secure web applications.
+      </p>
       <div className={styles.categories}>
         {data.map((category) => (
           <div key={category.category}>

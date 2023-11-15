@@ -27,8 +27,12 @@ export default function Projects({
   ...props
 }: React.HTMLAttributes<HTMLDivElement>): JSX.Element {
   return (
-    <section>
+    <section className={styles.projects}>
       <h2>Projects</h2>
+      <p>
+        Here are some of the projects I've been working on. Click on a project
+        to view more info.
+      </p>
       <ul className={styles.list}>
         {data.map((project, index) => (
           <li key={index} className={styles.item}>

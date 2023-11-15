@@ -1,5 +1,13 @@
 @import 'open-props/style';
 
+@font-face {
+  font-family: 'Hubot Sans';
+  src: url('/Hubot-Sans.woff2') format('woff2 supports variations'),
+    url('/Hubot-Sans.woff2') format('woff2-variations');
+  font-weight: 200 900;
+  font-stretch: 75% 125%;
+}
+
 @layer reset {
   /*
   Josh's Custom CSS Reset
@@ -38,6 +46,7 @@
   h4,
   h5,
   h6 {
+    font-size: inherit;
     overflow-wrap: break-word;
   }
   #root {
@@ -59,7 +68,7 @@
 body {
   background-color: var(--surface-1);
   color: var(--text-1);
-  font-family: var(--font-sans);
+  font-family: 'Hubot Sans';
   font-size: var(--font-size-1);
   line-height: var(--font-lineheight-1);
   min-height: 100vh;
@@ -75,6 +84,21 @@ body {
   @media (min-width: 768px) {
     max-width: var(--size-md);
   }
+}
+
+h1 {
+  font-size: var(--font-size-6);
+  font-weight: var(--font-weight-9);
+  line-height: var(--font-lineheight-0);
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-2);
+  font-weight: var(--font-weight-6);
 }
 
 header {

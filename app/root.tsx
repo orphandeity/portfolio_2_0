@@ -16,8 +16,24 @@ export const links: LinksFunction = () => [
     ? [
         { rel: 'stylesheet', href: cssBundleHref },
         { rel: 'stylesheet', href: styles },
+        {
+          rel: 'preload',
+          href: 'Hubot-Sans.woff2',
+          as: 'font',
+          type: 'font/woff2',
+          // crossorigin: 'anonymous',
+        },
       ]
-    : [{ rel: 'stylesheet', href: styles }]),
+    : [
+        { rel: 'stylesheet', href: styles },
+        {
+          rel: 'preload',
+          href: 'Hubot-Sans.woff2',
+          as: 'font',
+          type: 'font/woff2',
+          // crossorigin: 'anonymous',
+        },
+      ]),
 ]
 
 export default function App() {

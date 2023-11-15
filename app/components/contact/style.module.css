@@ -2,7 +2,11 @@
   font-size: var(--font-size-2);
 }
 
-.contact form > * {
+.contact form {
+  margin-top: var(--size-8);
+}
+
+.contact form > *:not(:first-child) {
   display: grid;
   gap: var(--size-1);
   margin-block-start: var(--size-4);
@@ -23,4 +27,20 @@
   color: var(--text-1);
   padding: var(--size-1);
   width: 100%;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--size-1);
+  padding: var(--size-2) var(--size-3);
+  width: 100%;
+  border: none;
+  border-radius: var(--radius-2);
+  box-shadow: var(--shadow-2);
+  background-image: linear-gradient(to top, var(--violet-6), var(--violet-3));
+  color: var(--violet-12);
+  font-size: var(--font-size-0);
+  font-weight: var(--font-weight-6);
+  letter-spacing: var(--font-letterspacing-1);
 }

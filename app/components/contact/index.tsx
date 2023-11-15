@@ -23,7 +23,7 @@ export default function Contact({
           <label htmlFor="message">Message</label>
           <textarea id="message" />
         </div>
-        <button className="button">Send message</button>
+        <button className={styles.button}>Send message</button>
       </form>
     </section>
   )

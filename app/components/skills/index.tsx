@@ -3,7 +3,7 @@ import styles from './style.module.css'
 const data = [
   {
     category: 'Modern Frontend Development',
-    skills: ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'React'],
+    skills: ['HTML', 'CSS', 'JavaScript', 'React'],
   },
   {
     category: 'Server-Side Development',
@@ -23,13 +23,13 @@ export default function Skills({
   ...props
 }: React.HTMLAttributes<HTMLDivElement>): JSX.Element {
   return (
-    <section {...props}>
+    <section {...props} className={styles.skills}>
       <h2>Skills</h2>
-      <div className={styles.skills}>
+      <div className={styles.categories}>
         {data.map((category) => (
           <div key={category.category}>
             <h3>{category.category}</h3>
-            <ul>
+            <ul className={styles.list}>
               {category.skills.map((skill) => (
                 <li key={skill}>{skill}</li>
               ))}

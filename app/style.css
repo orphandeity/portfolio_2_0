@@ -60,7 +60,7 @@
   --surface-3: var(--gray-7);
 
   --text-1: var(--gray-1);
-  --text-2: var(--gray-3);
+  --text-2: var(--gray-4);
 
   --border: var(--gray-7);
 }
@@ -92,13 +92,18 @@ h1 {
   line-height: var(--font-lineheight-0);
 }
 
+h2 {
+  font-size: var(--font-size-0);
+  font-weight: var(--font-weight-9);
+  letter-spacing: var(--font-letterspacing-1);
+}
+
 h2,
 h3,
 h4,
 h5,
 h6 {
   color: var(--text-2);
-  font-weight: var(--font-weight-6);
 }
 
 header {

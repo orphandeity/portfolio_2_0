@@ -114,3 +114,17 @@ header {
   grid-template-columns: repeat(5, 1fr);
   gap: var(--size-3);
 }
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--size-2) var(--size-3);
+  width: 100%;
+  border: none;
+  border-radius: var(--radius-2);
+  box-shadow: var(--shadow-2);
+  background-image: linear-gradient(to top, var(--violet-6), var(--violet-3));
+  color: var(--violet-12);
+  font-weight: var(--font-weight-6);
+}

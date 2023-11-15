@@ -6,6 +6,10 @@ export default function Contact({
   return (
     <section className={styles.contact}>
       <h2>Contact</h2>
+      <p>
+        I'm currently looking for new opportunities. If you'd like to get in
+        touch, please fill out the form below.
+      </p>
       <form>
         <div>
           <label htmlFor="name">Name</label>
@@ -19,7 +23,7 @@ export default function Contact({
           <label htmlFor="message">Message</label>
           <textarea id="message" />
         </div>
-        <button>Send message</button>
+        <button className="button">Send message</button>
       </form>
     </section>
   )

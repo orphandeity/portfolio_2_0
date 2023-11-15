@@ -12,9 +12,9 @@ export default function Hero({
         <br />
         and Musician.
       </h1>
-      <p>
-        I create dynamic web experiences that people love to use. You can read a
-        bit more about me or check out some things I have built.
+      <p className="text">
+        I build dynamic web experiences that people love to use. You can read a
+        bit more about me or check out some things I have made.
       </p>
     </div>
   )

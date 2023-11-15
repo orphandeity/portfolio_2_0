@@ -30,7 +30,7 @@ export default function Projects({
   return (
     <section className={styles.projects}>
       <h2>Projects</h2>
-      <p>
+      <p className="text">
         Here are some of the projects I've been working on. Click on a project
         to view more info.
       </p>

@@ -1,7 +1,3 @@
-.contact p {
-  font-size: var(--font-size-2);
-}
-
 .contact form {
   margin-top: var(--size-8);
 }

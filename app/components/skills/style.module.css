@@ -1,7 +1,3 @@
-.skills p {
-  font-size: var(--font-size-2);
-}
-
 .categories {
   & h3 {
     color: var(--text-2);

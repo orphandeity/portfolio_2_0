@@ -95,7 +95,6 @@ h1 {
 }
 
 h2 {
-  color: var(--text-2);
   font-weight: var(--font-weight-9);
   letter-spacing: var(--font-letterspacing-1);
   margin-bottom: var(--size-2);
@@ -111,4 +110,9 @@ h2 {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: var(--size-3);
+}
+
+.text {
+  color: var(--text-2);
+  font-size: var(--font-size-3);
 }

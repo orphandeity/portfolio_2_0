@@ -1,9 +1,7 @@
 .hero {
-  & > * {
-    margin-top: var(--size-8);
-  }
+  margin-top: var(--size-10);
 
   & p {
-    font-size: var(--font-size-2);
+    margin-top: var(--size-8);
   }
 }

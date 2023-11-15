@@ -99,19 +99,6 @@ h2 {
   margin-bottom: var(--size-4);
 }
 
-h3 {
-  font-weight: var(--font-weight-6);
-  margin-bottom: var(--size-2);
-}
-
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: var(--text-2);
-}
-
 header {
   padding-top: var(--size-3);
 }

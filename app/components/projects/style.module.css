@@ -6,25 +6,27 @@
 }
 
 .item {
+  display: grid;
+  gap: var(--size-3);
   background-color: var(--surface-2);
-  border: var(--border-size-1) solid var(--border);
   border-radius: var(--radius-2);
   box-shadow: var(--shadow-2);
-  padding: var(--size-2);
+  padding: var(--size-3);
 }
 
 .links {
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: var(--size-3);
-  margin-top: var(--size-4);
 }
 
 .links a {
-  display: flex;
+  display: grid;
+  place-content: center;
   padding: var(--size-2) var(--size-3);
   border-radius: var(--radius-2);
   background-color: var(--surface-3);
-  color: var(--violet-0);
+  color: var(--text-2);
+  font-weight: var(--font-weight-6);
   text-decoration: none;
 }

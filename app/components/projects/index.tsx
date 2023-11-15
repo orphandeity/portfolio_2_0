@@ -37,12 +37,12 @@ export default function Projects({
             <div className={styles.links}>
               {project.demo && (
                 <a href={project.demo} target="_blank" rel="noreferrer">
-                  Live demo
+                  View demo
                 </a>
               )}
               {project.code && (
                 <a href={project.code} target="_blank" rel="noreferrer">
-                  Code repository
+                  View code
                 </a>
               )}
             </div>

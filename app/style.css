@@ -99,9 +99,14 @@ h1 {
 }
 
 h2 {
+  font-stretch: var(--font-stretch);
   font-weight: var(--font-weight-9);
-  letter-spacing: var(--font-letterspacing-1);
   margin-bottom: var(--size-2);
+}
+
+h3 {
+  font-stretch: var(--font-stretch);
+  font-weight: var(--font-weight-6);
 }
 
 .gap {

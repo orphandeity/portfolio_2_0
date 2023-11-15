@@ -21,12 +21,5 @@
 }
 
 .links a {
-  display: grid;
-  place-content: center;
-  padding: var(--size-2) var(--size-3);
-  border-radius: var(--radius-2);
-  background-color: var(--surface-3);
-  color: var(--text-2);
-  font-weight: var(--font-weight-6);
   text-decoration: none;
 }

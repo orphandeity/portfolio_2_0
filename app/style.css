@@ -59,8 +59,8 @@
   --surface-2: var(--gray-8);
   --surface-3: var(--gray-7);
 
-  --text-1: var(--gray-1);
-  --text-2: var(--gray-5);
+  --text-1: var(--gray-2);
+  --text-2: var(--gray-4);
 
   --border: var(--gray-7);
 }
@@ -93,7 +93,7 @@ h1 {
 }
 
 h2 {
-  font-size: var(--font-size-0);
+  color: var(--text-2);
   font-weight: var(--font-weight-9);
   letter-spacing: var(--font-letterspacing-1);
   margin-bottom: var(--size-4);
@@ -104,8 +104,8 @@ header {
 }
 
 .gap {
-  & > * {
-    margin-block-start: var(--size-10);
+  & > *:not(:first-child) {
+    margin-block-start: var(--size-12);
   }
 }
 

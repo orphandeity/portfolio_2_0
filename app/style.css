@@ -99,10 +99,6 @@ h2 {
   margin-bottom: var(--size-4);
 }
 
-header {
-  padding-top: var(--size-3);
-}
-
 .gap {
   & > *:not(:first-child) {
     margin-block-start: var(--size-12);

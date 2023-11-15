@@ -1,0 +1,24 @@
+.layout {
+  margin: var(--size-3) 0;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+
+  & > :nth-child(2) {
+    flex: 1;
+  }
+}
+
+.header,
+.footer {
+  flex: 0 0 auto;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: var(--size-8);
+  font-size: var(--font-size-0);
+  letter-spacing: var(--font-letterspacing-1);
+}

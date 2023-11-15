@@ -10,6 +10,7 @@ import {
 } from '@remix-run/react'
 
 import styles from './style.css'
+import Layout from './components/layout'
 
 export const links: LinksFunction = () => [
   ...(cssBundleHref
@@ -46,10 +47,9 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <header>
-          <b>Jeff Williams | Web Developer</b>
-        </header>
-        <Outlet />
+        <Layout>
+          <Outlet />
+        </Layout>
         <ScrollRestoration />
         <Scripts />
         <LiveReload />

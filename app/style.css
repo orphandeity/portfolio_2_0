@@ -55,6 +55,8 @@
 }
 
 :root {
+  --font-stretch: 115%;
+
   --surface-1: var(--gray-9);
   --surface-2: var(--gray-8);
   --surface-3: var(--gray-7);
@@ -90,7 +92,9 @@ body {
 
 h1 {
   font-size: var(--font-size-6);
+  font-stretch: var(--font-stretch);
   font-weight: var(--font-weight-9);
+  letter-spacing: var(--font-letterspacing-0);
   line-height: var(--font-lineheight-0);
 }
 

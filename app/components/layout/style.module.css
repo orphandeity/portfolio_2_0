@@ -15,8 +15,8 @@
 }
 
 .header b {
-  font-weight: var(--font-weight-5);
-  font-stretch: 125%;
+  font-weight: var(--font-weight-6);
+  font-stretch: var(--font-stretch);
 }
 
 .footer {

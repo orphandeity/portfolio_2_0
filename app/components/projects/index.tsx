@@ -28,44 +28,46 @@ export default function Projects({
   ...props
 }: React.HTMLAttributes<HTMLDivElement>): JSX.Element {
   return (
-    <section className={styles.projects}>
+    <section>
       <h2>Projects</h2>
-      <p className="text">
-        Here are some of the projects I've been working on. Click on a project
-        to view more info.
-      </p>
-      <ul className={styles.list}>
-        {data.map((project, index) => (
-          <li key={index} className={styles.item}>
-            <h3>{project.title}</h3>
-            <p>{project.description}</p>
-            <div className={styles.links}>
-              {project.demo && (
-                <a
-                  href={project.demo}
-                  target="_blank"
-                  rel="noreferrer"
-                  className={styles.button}
-                >
-                  <RocketIcon />
-                  <span>View demo</span>
-                </a>
-              )}
-              {project.code && (
-                <a
-                  href={project.code}
-                  target="_blank"
-                  rel="noreferrer"
-                  className={styles.button}
-                >
-                  <GitHubLogoIcon />
-                  <span>View code</span>
-                </a>
-              )}
-            </div>
-          </li>
-        ))}
-      </ul>
+      <div className={styles.container}>
+        <p className="text">
+          Here are some of the projects I've been working on. Click on a project
+          to view more info.
+        </p>
+        <ul className={styles.list}>
+          {data.map((project, index) => (
+            <li key={index} className={styles.item}>
+              <h3>{project.title}</h3>
+              <p>{project.description}</p>
+              <div className={styles.links}>
+                {project.demo && (
+                  <a
+                    href={project.demo}
+                    target="_blank"
+                    rel="noreferrer"
+                    className={styles.button}
+                  >
+                    <RocketIcon />
+                    <span>View demo</span>
+                  </a>
+                )}
+                {project.code && (
+                  <a
+                    href={project.code}
+                    target="_blank"
+                    rel="noreferrer"
+                    className={styles.button}
+                  >
+                    <GitHubLogoIcon />
+                    <span>View code</span>
+                  </a>
+                )}
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
     </section>
   )
 }

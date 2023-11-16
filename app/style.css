@@ -100,10 +100,6 @@ h1 {
   font-weight: var(--font-weight-9);
   letter-spacing: var(--font-letterspacing-0);
   line-height: var(--font-lineheight-0);
-
-  @media (min-width: 480px) {
-    font-size: var(--font-size-7);
-  }
 }
 
 h2 {

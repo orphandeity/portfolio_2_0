@@ -7,7 +7,7 @@ export default function Contact({
     <section className={styles.contact}>
       <h2>Contact</h2>
       <div className={styles.container}>
-        <p className="text">
+        <p>
           I'm currently looking for new opportunities. If you'd like to get in
           touch, please fill out the form below.
         </p>

@@ -1,4 +1,4 @@
-import { GitHubLogoIcon, RocketIcon } from '@radix-ui/react-icons'
+// import { GitHubLogoIcon, RocketIcon } from '@radix-ui/react-icons'
 import styles from './style.module.css'
 
 const data = [
@@ -31,7 +31,7 @@ export default function Projects({
     <section>
       <h2>Projects</h2>
       <div className={styles.container}>
-        <p className="text">
+        <p>
           Here are some of the projects I've been working on. Click on a project
           to view more info.
         </p>
@@ -48,8 +48,8 @@ export default function Projects({
                     rel="noreferrer"
                     className={styles.button}
                   >
-                    <RocketIcon />
-                    <span>View demo</span>
+                    {/* <RocketIcon /> */}
+                    <span>VIEW DEMO</span>
                   </a>
                 )}
                 {project.code && (
@@ -59,8 +59,8 @@ export default function Projects({
                     rel="noreferrer"
                     className={styles.button}
                   >
-                    <GitHubLogoIcon />
-                    <span>View code</span>
+                    {/* <GitHubLogoIcon /> */}
+                    <span>VIEW CODE</span>
                   </a>
                 )}
               </div>

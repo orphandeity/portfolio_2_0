@@ -1,34 +1,30 @@
 .hero {
-  margin-top: var(--size-10);
-
-  @media (min-width: 768px) {
-    margin-top: var(--size-12);
-  }
+  margin-top: var(--size-12);
 }
 
 .hero p {
+  font-size: var(--font-size-2);
   margin-top: var(--size-8);
-
-  @media (min-width: 768px) {
-    font-size: var(--font-size-3);
-  }
 }
 
 @media (min-width: 768px) {
   .hero {
     display: grid;
+    align-items: end;
     gap: var(--size-8);
     row-gap: var(--size-10);
     grid-template-columns: repeat(5, 1fr);
 
     & h1 {
+      font-size: var(--font-size-7);
       grid-column: 1 / span 3;
     }
 
     & p {
-      margin: 0;
+      font-size: var(--font-size-4);
       grid-column: 3 / span 3;
-      grid-row: 2 / 3;
+      grid-row: 2;
+      margin: 0;
     }
   }
 }

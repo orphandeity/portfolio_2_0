@@ -9,8 +9,8 @@
     margin-top: var(--size-10);
 
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
     gap: var(--size-8);
+    grid-template-columns: repeat(5, 1fr);
 
     & h1 {
       grid-column: 1 / span 3;

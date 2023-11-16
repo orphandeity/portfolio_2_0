@@ -26,7 +26,7 @@ export default function Skills({
     <section {...props}>
       <h2>Skills</h2>
       <div className={styles.container}>
-        <p className="text">
+        <p>
           I use modern tools and frameworks, along with a strong adherance to
           web standards to build fast, accessible, and secure web applications.
         </p>

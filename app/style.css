@@ -118,7 +118,7 @@ h3 {
 .grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: var(--size-3);
+  gap: var(--size-7);
 }
 
 .text {

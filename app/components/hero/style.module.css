@@ -1,7 +1,25 @@
 .hero {
-  margin-top: var(--size-10);
-
   & p {
     margin-top: var(--size-8);
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    margin-top: var(--size-10);
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: var(--size-8);
+
+    & h1 {
+      grid-column: 1 / span 3;
+    }
+
+    & p {
+      margin: 0;
+      grid-column: 3 / span 3;
+      grid-row: 2 / 3;
+    }
   }
 }

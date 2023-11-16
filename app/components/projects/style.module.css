@@ -10,9 +10,9 @@
   display: grid;
   gap: var(--size-3);
   background-color: var(--surface-2);
+  border: var(--border-size-1) solid var(--border);
   border-radius: var(--radius-2);
-  box-shadow: var(--shadow-2);
-  padding: var(--size-3);
+  padding: var(--size-2);
 
   & > p {
     color: var(--text-2);
@@ -30,13 +30,14 @@
 }
 
 .button {
-  --color: var(--violet-2);
+  --color: var(--border);
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: var(--size-1);
+  gap: var(--size-2);
   padding: var(--size-2) var(--size-3);
   width: 100%;
+
   border: var(--border-size-1) solid var(--color);
   border-radius: var(--radius-2);
 

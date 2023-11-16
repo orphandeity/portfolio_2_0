@@ -1,9 +1,12 @@
 .hero {
   margin-top: var(--size-10);
+
+  @media (min-width: 768px) {
+    margin-top: var(--size-12);
+  }
 }
 
 .hero p {
-  /* color: var(--text-2); */
   margin-top: var(--size-8);
 
   @media (min-width: 768px) {

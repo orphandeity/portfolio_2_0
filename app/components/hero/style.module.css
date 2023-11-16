@@ -3,7 +3,7 @@
 }
 
 .hero p {
-  color: var(--text-2);
+  /* color: var(--text-2); */
   margin-top: var(--size-8);
 
   @media (min-width: 768px) {
@@ -15,6 +15,7 @@
   .hero {
     display: grid;
     gap: var(--size-8);
+    row-gap: var(--size-10);
     grid-template-columns: repeat(5, 1fr);
 
     & h1 {

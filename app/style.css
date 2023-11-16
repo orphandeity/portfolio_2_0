@@ -103,15 +103,12 @@ h1 {
 }
 
 h2 {
-  color: var(--text-2);
-  font-stretch: var(--font-stretch);
-  font-weight: var(--font-weight-9);
+  font-weight: var(--font-weight-7);
   margin-bottom: var(--size-2);
 }
 
 h3 {
-  font-stretch: var(--font-stretch);
-  font-weight: var(--font-weight-6);
+  font-weight: var(--font-weight-5);
 }
 
 .gap {
@@ -124,12 +121,4 @@ h3 {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: var(--size-7);
-}
-
-.text {
-  color: var(--text-2);
-
-  @media (min-width: 480px) {
-    font-size: var(--font-size-2);
-  }
 }

@@ -152,6 +152,7 @@ h3 {
 
 @media (min-width: 768px) {
   .about {
+    margin-top: var(--size-12);
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: var(--size-8);

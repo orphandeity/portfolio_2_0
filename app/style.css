@@ -115,10 +115,10 @@ h3 {
   & > *:not(:first-child) {
     margin-block-start: var(--size-12);
   }
-}
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: var(--size-7);
+  @media (min-width: 480px) {
+    & > *:not(:first-child) {
+      margin-block-start: var(--size-13);
+    }
+  }
 }

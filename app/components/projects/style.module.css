@@ -1,5 +1,6 @@
 .container > p {
   color: var(--text-2);
+  font-size: var(--font-size-0);
 }
 
 .list {
@@ -73,12 +74,11 @@
     row-gap: var(--size-10);
 
     & > :first-child {
-      grid-column: 1 / span 3;
+      grid-column: 1 / span 2;
     }
 
     & > :nth-child(2) {
       grid-column: 3 / span 3;
-      grid-row: 2;
     }
   }
 
@@ -91,11 +91,7 @@
   .container {
     & > :first-child {
       grid-column: 1 / span 2;
-    }
-
-    & > :nth-child(2) {
-      grid-column: 3 / span 3;
-      grid-row: 1;
+      font-size: var(--font-size-1);
     }
   }
 }

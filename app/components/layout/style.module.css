@@ -14,6 +14,29 @@
   flex: 0 0 auto;
 }
 
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  & nav {
+    display: flex;
+    align-items: center;
+    gap: var(--size-3);
+  }
+}
+
+.header a {
+  color: var(--text-1);
+  text-decoration: none;
+
+  transition: color 0.3s var(--ease-5);
+
+  &:hover {
+    color: var(--violet-3);
+  }
+}
+
 .header b {
   font-weight: var(--font-weight-6);
   font-stretch: var(--font-stretch);

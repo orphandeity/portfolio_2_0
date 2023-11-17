@@ -12,21 +12,25 @@
 
 .item {
   display: grid;
+  grid-template-columns: 2fr 1fr;
+
   gap: var(--size-3);
   background-color: var(--surface-2);
   border: var(--border-size-1) solid var(--border);
   border-radius: var(--radius-2);
   padding: var(--size-2);
 
-  & > p {
+  & p {
+    font-size: var(--font-size-0);
+    margin-top: var(--size-2);
     color: var(--text-2);
   }
 }
 
 .links {
+  grid-area: 1 / 2 / 2 / 3;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: var(--size-3);
+  gap: var(--size-2);
 }
 
 .links a {
@@ -48,7 +52,8 @@
   font-weight: var(--font-weight-6);
   letter-spacing: var(--font-letterspacing-1);
 
-  transition: all 0.2s var(--ease-5);
+  transition-property: color, border-color, transform;
+  transition: 0.3s var(--ease-5);
 
   &:hover {
     --color: var(--violet-3);

@@ -38,8 +38,10 @@ export default function Projects({
         <ul className={styles.list}>
           {data.map((project, index) => (
             <li key={index} className={styles.item}>
-              <h3>{project.title}</h3>
-              <p>{project.description}</p>
+              <div>
+                <h3>{project.title}</h3>
+                <p>{project.description}</p>
+              </div>
               <div className={styles.links}>
                 {project.demo && (
                   <a

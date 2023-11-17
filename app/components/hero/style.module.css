@@ -1,5 +1,5 @@
 .hero {
-  margin-top: var(--size-12);
+  margin-top: var(--size-10);
 }
 
 .hero p {
@@ -9,6 +9,7 @@
 
 @media (min-width: 768px) {
   .hero {
+    margin-top: var(--size-12);
     display: grid;
     align-items: end;
     gap: var(--size-8);

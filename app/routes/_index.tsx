@@ -6,8 +6,11 @@ import Contact from '~/components/contact'
 
 export const meta: MetaFunction = () => {
   return [
-    { title: 'New Remix App' },
-    { name: 'description', content: 'Welcome to Remix!' },
+    { title: 'Jeff Williams | Web Developer' },
+    {
+      name: 'description',
+      content: 'Portfolio of Web Development work by Jeff Williams',
+    },
   ]
 }
 

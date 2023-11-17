@@ -1,3 +1,4 @@
+import { Link } from '@remix-run/react'
 import styles from './style.module.css'
 
 export default function Hero({
@@ -14,7 +15,11 @@ export default function Hero({
       </h1>
       <p>
         I build dynamic web experiences that people love to use. You can read a
-        bit more about me or check out some things I have made.
+        bit more{' '}
+        <Link to="about" className="link">
+          about me
+        </Link>{' '}
+        or check out some things I have made.
       </p>
     </div>
   )

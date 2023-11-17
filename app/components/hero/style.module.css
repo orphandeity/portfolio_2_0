@@ -16,15 +16,27 @@
     grid-template-columns: repeat(5, 1fr);
 
     & h1 {
-      font-size: var(--font-size-7);
+      font-size: var(--font-size-6);
       grid-column: 1 / span 3;
     }
 
     & p {
-      font-size: var(--font-size-4);
-      grid-column: 3 / span 3;
+      font-size: var(--font-size-3);
+      grid-column: 2 / span 4;
       grid-row: 2;
       margin: 0;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    & h1 {
+      font-size: var(--font-size-8);
+    }
+
+    & p {
+      grid-column: 3 / span 3;
     }
   }
 }

@@ -33,7 +33,7 @@
   transition: color 0.3s var(--ease-5);
 
   &:hover {
-    color: var(--violet-3);
+    color: var(--violet-2);
   }
 }
 

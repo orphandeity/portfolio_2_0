@@ -1,5 +1,6 @@
 import { GitHubLogoIcon, LinkedInLogoIcon } from '@radix-ui/react-icons'
 import styles from './style.module.css'
+import { Link } from '@remix-run/react'
 
 export default function Layout({
   children,
@@ -9,7 +10,9 @@ export default function Layout({
   return (
     <div className={styles.layout}>
       <header className={styles.header}>
-        <b>Jeff Williams | Web Developer</b>
+        <Link to="/">
+          <b>Jeff Williams | Web Developer</b>
+        </Link>
         <nav>
           <a
             href="https://github.com/orphandeity"

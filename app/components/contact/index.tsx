@@ -8,7 +8,7 @@ export default function Contact({
       <div className={styles.container}>
         <div>
           <h2>Contact</h2>
-          <p className={styles.text}>
+          <p className="text">
             I'm currently looking for new opportunities. If you'd like to get in
             touch, please fill out the form below.
           </p>

@@ -32,7 +32,7 @@ export default function Projects({
       <div className={styles.container}>
         <div>
           <h2>Projects</h2>
-          <p className={styles.text}>
+          <p className="text">
             Here are some of the projects I've been working on. Click on a
             project to view more info.
           </p>

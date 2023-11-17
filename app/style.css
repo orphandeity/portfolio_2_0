@@ -126,6 +126,15 @@ h3 {
   }
 }
 
+.text {
+  color: var(--text-2);
+  font-size: var(--font-size-0);
+
+  @media (min-width: 1024px) {
+    font-size: var(--font-size-1);
+  }
+}
+
 .link {
   color: var(--violet-2);
   text-decoration: underline;

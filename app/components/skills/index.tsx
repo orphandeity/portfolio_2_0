@@ -27,7 +27,7 @@ export default function Skills({
       <div className={styles.container}>
         <div>
           <h2>Skills</h2>
-          <p className={styles.text}>
+          <p className="text">
             I use modern tools and frameworks, along with a strong adherance to
             web standards to build fast, accessible, and secure web
             applications.

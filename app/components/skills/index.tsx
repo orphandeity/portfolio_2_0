@@ -24,12 +24,15 @@ export default function Skills({
 }: React.HTMLAttributes<HTMLDivElement>): JSX.Element {
   return (
     <section {...props}>
-      <h2>Skills</h2>
       <div className={styles.container}>
-        <p>
-          I use modern tools and frameworks, along with a strong adherance to
-          web standards to build fast, accessible, and secure web applications.
-        </p>
+        <div>
+          <h2>Skills</h2>
+          <p className={styles.text}>
+            I use modern tools and frameworks, along with a strong adherance to
+            web standards to build fast, accessible, and secure web
+            applications.
+          </p>
+        </div>
         <div className={styles.categories}>
           {data.map((category) => (
             <div key={category.category}>

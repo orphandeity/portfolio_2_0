@@ -1,4 +1,4 @@
-.container > p {
+.text {
   color: var(--text-2);
   font-size: var(--font-size-0);
 }
@@ -45,8 +45,11 @@
   .container {
     & > :first-child {
       grid-column: 1 / span 2;
-      font-size: var(--font-size-1);
     }
+  }
+
+  .text {
+    font-size: var(--font-size-1);
   }
 
   .list {

@@ -5,12 +5,14 @@ export default function Contact({
 }: React.HTMLAttributes<HTMLDivElement>): JSX.Element {
   return (
     <section id="contact" className={styles.contact}>
-      <h2>Contact</h2>
       <div className={styles.container}>
-        <p>
-          I'm currently looking for new opportunities. If you'd like to get in
-          touch, please fill out the form below.
-        </p>
+        <div>
+          <h2>Contact</h2>
+          <p className={styles.text}>
+            I'm currently looking for new opportunities. If you'd like to get in
+            touch, please fill out the form below.
+          </p>
+        </div>
         <form>
           <div>
             <label htmlFor="name">Name</label>

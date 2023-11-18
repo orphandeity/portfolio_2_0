@@ -5,7 +5,7 @@ export default function Contact({
 }: React.HTMLAttributes<HTMLDivElement>): JSX.Element {
   return (
     <section id="contact" className={styles.contact}>
-      <div className={styles.container}>
+      <div className="grid">
         <div>
           <h2>Contact</h2>
           <p className="text">

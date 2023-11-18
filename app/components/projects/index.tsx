@@ -29,7 +29,7 @@ export default function Projects({
 }: React.HTMLAttributes<HTMLDivElement>): JSX.Element {
   return (
     <section>
-      <div className={styles.container}>
+      <div className="grid">
         <div>
           <h2>Projects</h2>
           <p data-hidden className="text">

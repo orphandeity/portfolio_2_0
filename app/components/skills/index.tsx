@@ -24,7 +24,7 @@ export default function Skills({
 }: React.HTMLAttributes<HTMLDivElement>): JSX.Element {
   return (
     <section {...props}>
-      <div className={styles.container}>
+      <div className="grid">
         <div>
           <h2>Skills</h2>
           <p data-hidden className="text">

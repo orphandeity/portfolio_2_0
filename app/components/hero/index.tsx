@@ -5,7 +5,7 @@ export default function Hero({
   ...props
 }: React.HTMLAttributes<HTMLDivElement>): JSX.Element {
   return (
-    <div className={styles.hero}>
+    <div className={`${styles.hero} grid`}>
       <h1>
         Hi, I'm Jeff...
         <br />

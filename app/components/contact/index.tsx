@@ -24,11 +24,18 @@ export default function Contact({
               minLength={3}
               maxLength={30}
               required
+              autoComplete="off"
             />
           </div>
           <div>
             <label htmlFor="email">Email</label>
-            <input type="email" id="email" name="email" required />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              autoComplete="off"
+            />
           </div>
           <div>
             <label htmlFor="message">Message</label>

@@ -12,15 +12,15 @@ const data = [
     title: 'Galleria Slideshow',
     description:
       'A gallery website with a masonry layout, lightbox view, and slideshow',
-    demo: 'https://orphandeity.github.io/markdown-editor/',
-    code: 'https://github.com/orphandeity/markdown-editor.git',
+    demo: 'https://galleria-slideshow-site-amber.vercel.app/',
+    code: 'https://github.com/orphandeity/galleria-slideshow-site.git',
   },
   {
     title: 'Planets Fact Site',
     description:
       'An educational web app with information about the planets in our solar system',
-    demo: 'https://orphandeity.github.io/markdown-editor/',
-    code: 'https://github.com/orphandeity/markdown-editor.git',
+    demo: 'https://planets-fact-site-two.vercel.app/',
+    code: 'https://github.com/orphandeity/planets-fact-site.git',
   },
 ]
 

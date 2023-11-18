@@ -14,7 +14,7 @@ export default function Contact({
             touch, please fill out the form below.
           </p>
         </div>
-        <Form method="post" action="/">
+        <Form method="post" action="/?index">
           <div>
             <label htmlFor="name">Name</label>
             <input

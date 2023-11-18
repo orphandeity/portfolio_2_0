@@ -1,5 +1,9 @@
 import { cssBundleHref } from '@remix-run/css-bundle'
-import type { LinksFunction } from '@remix-run/node'
+import {
+  redirect,
+  type ActionFunctionArgs,
+  type LinksFunction,
+} from '@remix-run/node'
 import {
   Links,
   LiveReload,
@@ -11,6 +15,7 @@ import {
 
 import styles from './style.css'
 import Layout from './components/layout'
+import sendMail from './services/sendMail'
 
 export const links: LinksFunction = () => [
   ...(cssBundleHref
@@ -36,6 +41,17 @@ export const links: LinksFunction = () => [
         },
       ]),
 ]
+
+export const action = async ({ request }: ActionFunctionArgs) => {
+  const body = await request.formData()
+  console.log(body)
+  const data = Object.fromEntries(body)
+  console.log(data)
+  const isSent = await sendMail(data)
+
+  if (isSent) return redirect('/thankyou')
+  else return redirect('/error')
+}
 
 export default function App() {
   return (

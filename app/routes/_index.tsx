@@ -1,4 +1,4 @@
-import type { MetaFunction } from '@remix-run/node'
+import { type MetaFunction } from '@remix-run/node'
 import Hero from '~/components/hero'
 import Skills from '~/components/skills'
 import Projects from '~/components/projects'

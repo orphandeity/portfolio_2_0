@@ -1,3 +1,4 @@
+import { Form } from '@remix-run/react'
 import styles from './style.module.css'
 
 export default function Contact({
@@ -13,21 +14,36 @@ export default function Contact({
             touch, please fill out the form below.
           </p>
         </div>
-        <form>
+        <Form method="post" action="/">
           <div>
             <label htmlFor="name">Name</label>
-            <input type="text" id="name" />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              minLength={3}
+              maxLength={30}
+              required
+            />
           </div>
           <div>
             <label htmlFor="email">Email</label>
-            <input type="email" id="email" />
+            <input type="email" id="email" name="email" required />
           </div>
           <div>
             <label htmlFor="message">Message</label>
-            <textarea id="message" />
+            <textarea
+              id="message"
+              name="message"
+              minLength={10}
+              maxLength={230}
+              required
+            />
           </div>
-          <button className={styles.button}>Send message</button>
-        </form>
+          <button type="submit" className={styles.button}>
+            Send message
+          </button>
+        </Form>
       </div>
     </section>
   )

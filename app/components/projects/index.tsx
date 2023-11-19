@@ -29,7 +29,7 @@ export default function Projects({
   ...props
 }: React.HTMLAttributes<HTMLDivElement>): JSX.Element {
   return (
-    <section>
+    <section id="projects">
       <div className="grid">
         <div>
           <h2>Projects</h2>

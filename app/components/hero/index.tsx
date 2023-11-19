@@ -19,7 +19,7 @@ export default function Hero({
         <Link to="about" className="link">
           about me
         </Link>{' '}
-        or check out some things I have made.
+        or check out some things I have made below.
       </p>
     </div>
   )

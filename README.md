@@ -1,36 +1,14 @@
-# Welcome to Remix!
+# Jeff Williams - Web Developer Portfolio
 
-- [Remix Docs](https://remix.run/docs)
+Welcome to my Web Developer Portfolio! This repository hosts the source code for my professional portfolio website, which showcases my skills and projects as a web developer.
 
-## Development
+It's built using Remix and Express for a performant, server-rendered experience.
 
-Start the Remix development asset server and the Express server by running:
+Visit my [live portfolio](https://jeffwilliams.xyz) to explore my work.
 
-```sh
-npm run dev
-```
+## Contact
 
-This starts your app in development mode, which will purge the server require cache when Remix rebuilds assets so you don't need a process manager restarting the express server.
+- LinkedIn: [Jeff Williams](https://www.linkedin.com/in/jeffwilliams93)
+- Email: jeffwilliams.dev23@gmail.com
 
-## Deployment
-
-First, build your app for production:
-
-```sh
-npm run build
-```
-
-Then run the app in production mode:
-
-```sh
-npm start
-```
-
-Now you'll need to pick a host to deploy it to.
-
-### DIY
-
-If you're familiar with deploying express applications you should be right at home just make sure to deploy the output of `remix build`
-
-- `build/`
-- `public/build/`
+Feel free to reach out if you have any questions or if you'd like to discuss potential job opportunities. Thank you for your interest in my work!

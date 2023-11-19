@@ -31,11 +31,17 @@
   justify-content: center;
   align-items: center;
   gap: var(--size-1);
+  border-bottom: var(--border-size-1) solid transparent;
   color: var(--text-2);
-  transition: color 0.3s var(--ease-5);
+  transition: color 0.3s var(--ease-1);
 
   &:hover {
-    color: var(--violet-3);
+    color: var(--violet-2);
+  }
+
+  &:focus {
+    outline: none;
+    border-bottom-color: var(--violet-2);
   }
 }
 

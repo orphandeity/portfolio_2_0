@@ -23,7 +23,7 @@ export default function Skills({
   ...props
 }: React.HTMLAttributes<HTMLDivElement>): JSX.Element {
   return (
-    <section {...props}>
+    <section {...props} className={styles.skills}>
       <h2>Skills</h2>
       <div className="grid">
         <div>

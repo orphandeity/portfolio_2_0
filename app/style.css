@@ -214,3 +214,12 @@ h3 {
     column-gap: var(--size-8);
   }
 }
+
+.thankyou {
+  margin-top: var(--size-10);
+
+  @media (min-width: 768px) {
+    font-size: var(--font-size-3);
+    margin-top: var(--size-12);
+  }
+}

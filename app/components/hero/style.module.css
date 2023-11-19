@@ -39,7 +39,6 @@
     }
 
     & p {
-      font-size: var(--font-size-3);
       grid-column: 3 / span 3;
     }
   }

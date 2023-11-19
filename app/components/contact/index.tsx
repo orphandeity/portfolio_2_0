@@ -50,11 +50,7 @@ export default function Contact({
               required
             />
           </div>
-          <button
-            type="submit"
-            disabled={isSubmitting}
-            className={styles.button}
-          >
+          <button type="submit" disabled={isSubmitting} className="button">
             {isSubmitting ? 'Sending...' : 'Send message'}
           </button>
         </Form>

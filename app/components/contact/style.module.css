@@ -44,7 +44,7 @@
 
 .contact input::selection,
 .contact textarea::selection {
-  background-color: var(--violet-4);
+  background-color: var(--violet-3);
 }
 
 .button {
@@ -60,17 +60,16 @@
   transition: transform 0.2s var(--ease-elastic-out-5), color 0.3s var(--ease-5),
     border-color 0.3s var(--ease-5), box-shadow 0.3s var(--ease-out-5);
 
-  &:hover {
+  &:hover,
+  &:focus {
     border-color: var(--violet-3);
     color: var(--violet-3);
+
+    outline: none;
+    box-shadow: 0 0 4px 1px var(--violet-3);
   }
 
   &:active {
     transform: translateY(var(--size-1));
-  }
-
-  &:focus {
-    outline: none;
-    box-shadow: 0 0 8px 2px var(--violet-2);
   }
 }

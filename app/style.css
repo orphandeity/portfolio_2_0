@@ -153,15 +153,22 @@ h3 {
 }
 
 .link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--size-1);
+
   color: var(--violet-2);
   text-decoration: underline;
   text-underline-offset: 4px;
   text-decoration-color: transparent;
   transition: all 0.3s var(--ease-5);
 
-  &:hover {
-    color: var(--violet-4);
-    text-decoration-color: var(--violet-4);
+  &:hover,
+  &:focus {
+    color: var(--violet-3);
+    text-decoration-color: var(--violet-3);
+    outline: none;
   }
 }
 

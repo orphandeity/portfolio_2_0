@@ -1,9 +1,12 @@
-import { Form } from '@remix-run/react'
+import { Form, useNavigation } from '@remix-run/react'
 import styles from './style.module.css'
 
 export default function Contact({
   ...props
 }: React.HTMLAttributes<HTMLDivElement>): JSX.Element {
+  const navigation = useNavigation()
+  const isSubmitting = navigation.formAction === '/?index'
+
   return (
     <section id="contact" className={styles.contact}>
       <h2>Contact</h2>
@@ -47,8 +50,12 @@ export default function Contact({
               required
             />
           </div>
-          <button type="submit" className={styles.button}>
-            Send message
+          <button
+            type="submit"
+            disabled={isSubmitting}
+            className={styles.button}
+          >
+            {isSubmitting ? 'Sending...' : 'Send message'}
           </button>
         </Form>
       </div>

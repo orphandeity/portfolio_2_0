@@ -73,3 +73,8 @@
     transform: translateY(var(--size-1));
   }
 }
+
+.button[disabled] {
+  opacity: 0.3;
+  cursor: not-allowed;
+}

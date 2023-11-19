@@ -30,9 +30,9 @@ export default function Projects({
 }: React.HTMLAttributes<HTMLDivElement>): JSX.Element {
   return (
     <section id="projects">
+      <h2>Projects</h2>
       <div className="grid">
         <div>
-          <h2>Projects</h2>
           <p data-hidden className="text">
             Here are some of the projects I've been working on. Click on a
             project to view more info.

@@ -6,9 +6,9 @@ export default function Contact({
 }: React.HTMLAttributes<HTMLDivElement>): JSX.Element {
   return (
     <section id="contact" className={styles.contact}>
+      <h2>Contact</h2>
       <div className="grid">
         <div>
-          <h2>Contact</h2>
           <p className="text">
             I'm currently looking for new opportunities. If you'd like to get in
             touch, please fill out the form below.

@@ -24,9 +24,9 @@ export default function Skills({
 }: React.HTMLAttributes<HTMLDivElement>): JSX.Element {
   return (
     <section {...props}>
+      <h2>Skills</h2>
       <div className="grid">
         <div>
-          <h2>Skills</h2>
           <p data-hidden className="text">
             I use modern tools and frameworks, along with a strong adherance to
             web standards to build fast, accessible, and secure web

@@ -8,56 +8,34 @@
 
 .item {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  gap: var(--size-4);
 
-  gap: var(--size-3);
   background-color: var(--surface-2);
   border: var(--border-size-1) solid var(--border);
   border-radius: var(--radius-2);
   padding: var(--size-2);
 
   & p {
-    font-size: var(--font-size-0);
     margin-top: var(--size-2);
-    color: var(--text-2);
   }
 }
 
 .links {
-  grid-area: 1 / 2 / 2 / 3;
-  display: grid;
-  gap: var(--size-2);
+  display: flex;
+  gap: var(--size-4);
 }
 
 .links a {
   text-decoration: none;
-}
-
-.button {
-  --color: var(--text-2);
-  display: grid;
-  place-content: center;
-  padding: var(--size-2);
-  width: 100%;
-
-  border-radius: var(--radius-2);
-  border: var(--border-size-1) solid transparent;
-
-  color: var(--color);
-  font-size: var(--font-size-0);
-  font-weight: var(--font-weight-6);
-  letter-spacing: var(--font-letterspacing-1);
-
-  transition-property: color, border-color, transform;
-  transition: 0.3s var(--ease-5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--size-1);
+  color: var(--text-2);
+  transition: color 0.3s var(--ease-5);
 
   &:hover {
-    --color: var(--violet-3);
-    border-color: var(--color);
-  }
-
-  &:active {
-    transform: translateY(2px);
+    color: var(--violet-3);
   }
 }
 

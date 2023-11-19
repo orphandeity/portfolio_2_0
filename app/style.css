@@ -55,7 +55,7 @@
 }
 
 :root {
-  --font-stretch: 115%;
+  --font-stretch: 120%;
 
   --surface-1: var(--gray-10);
   --surface-2: var(--gray-9);

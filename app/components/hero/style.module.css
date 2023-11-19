@@ -1,7 +1,7 @@
 .hero {
   margin-top: var(--size-10);
   display: grid;
-  gap: var(--size-4);
+  gap: var(--size-8);
 }
 
 .title {
@@ -16,7 +16,6 @@
     margin-top: var(--size-12);
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: var(--size-8);
     align-items: end;
 
     & h1 {

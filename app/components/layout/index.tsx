@@ -10,7 +10,7 @@ export default function Layout({
   return (
     <div className={styles.layout}>
       <header className={styles.header}>
-        <Link to="/">
+        <Link to="/" className={styles.title}>
           <b>Jeff Williams | Web Developer</b>
         </Link>
         <nav>
@@ -18,6 +18,7 @@ export default function Layout({
             href="https://github.com/orphandeity"
             target="_blank"
             rel="noreferrer"
+            aria-label="GitHub"
           >
             <GitHubLogoIcon />
           </a>
@@ -25,6 +26,7 @@ export default function Layout({
             href="https://www.linkedin.com/in/jeffwilliams93"
             target="_blank"
             rel="noreferrer"
+            aria-label="LinkedIn"
           >
             <LinkedInLogoIcon />
           </a>

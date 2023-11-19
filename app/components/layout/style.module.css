@@ -26,20 +26,27 @@
   }
 }
 
-.header a {
+.header nav a {
   color: var(--text-1);
   text-decoration: none;
 
-  transition: color 0.3s var(--ease-5);
+  transition: color 0.3s var(--ease-2);
 
   &:hover {
     color: var(--violet-3);
   }
 }
 
-.header b {
+.title {
+  color: var(--text-1);
   font-weight: var(--font-weight-6);
   font-stretch: var(--font-stretch);
+  text-decoration: none;
+  transition: color 0.3s var(--ease-2);
+
+  &:hover {
+    color: var(--gray-0);
+  }
 }
 
 .footer {
